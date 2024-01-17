@@ -12,4 +12,8 @@
     'category': 'Kawiil/Custom Modules',
     'website': 'https://github.com/Carolinetwio/odoo-training',
     'application': True,
+    'data': [],
+    'demo': [
+        'demo/motorcycle_registry_demo.xml',
+    ],
 }

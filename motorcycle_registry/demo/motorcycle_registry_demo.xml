@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="motorcycle_01" model="motorcycle.registry">
+            <field name="current_mileage">250</field>
+            <field name="first_name">Caroline</field>
+            <field name="last_name">Strähl</field>
+            <field name="registry_number">12345</field>
+            <field name="vin">0000000</field>
+        </record>
+        <record id="motorcycle_02" model="motorcycle.registry">
+            <field name="current_mileage">5250</field>
+            <field name="first_name">Hildegard</field>
+            <field name="last_name">Neukomm</field>
+            <field name="registry_number">7123</field>
+            <field name="vin">9999999</field>
+            <field name="date_registry">2023-01-27</field>
+        </record>
+        <record id="motorcycle_03" model="motorcycle.registry">
+            <field name="current_mileage">23250</field>
+            <field name="first_name">Pia</field>
+            <field name="last_name">Schönfeld</field>
+            <field name="registry_number">8265</field>
+            <field name="vin">9876543</field>
+            <field name="date_registry" eval="(DateTime.today() - relativedelta(months=1)).strftime('%Y-%m-%d')"/>
+        </record>
+    </data>
+</odoo>
