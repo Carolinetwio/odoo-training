@@ -8,6 +8,7 @@
         """,
     'author': 'Carolinetwio',
     'version': '0.0.1',
+    'license': 'OPL-1',
     'category': 'Kawiil/Custom Modules',
     'website': 'https://github.com/Carolinetwio/odoo-training',
     'application': True,
