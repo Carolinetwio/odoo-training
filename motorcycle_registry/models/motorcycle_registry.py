@@ -17,6 +17,8 @@ class MotorcycleRegistry(models.Model):
 
     owner_id = fields.Many2one(string="Owner", comodel_name="res.partner", ondelete="restrict")
 
+    #product_ids = fields.One2many(string="Product", comodel_name="product.template", inverse_name="registry_id")
+
     # Related fields
     email = fields.Char(string="Email", related="owner_id.email")
     phone = fields.Char(string="Phone", related="owner_id.phone")

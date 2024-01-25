@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="motorcycle_product" model="product.template">
+            <field name="name">Ukko Adventure</field>
+            <field name="make">Kauli</field>
+            <field name="model">Ukko Adventure</field>
+            <field name="year">2023</field>
+            <field name="curb_weight">544</field>
+            <field name="launch_date">2023-07-06</field>
+            <field name="battery_capacity">xl</field>
+            <field name="charge_time">2.7</field>
+            <field name="range">180</field>
+            <field name="horsepower">110</field>
+            <field name="top_speed">112</field>
+            <field name="torque">166</field>
+        </record>
+    </data>
+</odoo>
