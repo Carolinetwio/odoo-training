@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="comparison_website">
+        <t t-call="website.layout">
+            <t t-set="title">Motorcycle Comparison</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <h1>Motorcycle Comparison</h1>
+                    <h3>
+                        Specs
+                    </h3>
+                    <p>
+                        Launch Date:
+                    </p>
+                    <p>
+                        Horsepower:
+                    </p>
+                    <p>
+                        Top Speed:
+                    </p>
+                    <p>
+                        Torque:
+                    </p>
+                    <p>
+                        Battery Capacity:
+                    </p>
+                    <p>
+                        Charge Time:
+                    </p>
+                    <p>
+                        Range:
+                    </p>
+                    <p>
+                        Curb Weight:
+                    </p>
+                    <t t-foreach="motorcycles" t-as="motorcycle">
+                        <a t-attf-href="/motorcycle_registry/{{slug(motorcycle)}}">
+                            <h3>
+                                <t t-out="motorcycle.name"/>
+                            </h3>
+                        </a>
+                        <p>
+                            <t t-out="motorcycle.launch_date"/>
+                        </p>
+                        <p>
+                            <t t-out="motorcycle.horsepower"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.top_speed"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.torque"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.battery_capacity"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.charge_time"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.range"/>
+                        </p>
+                        <p>
+                        <t t-out="motorcycle.curb_weight"/>
+                        </p>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="motorcycle_website">
+        <t t-call="website.layout">
+            <t t-set="title">Motorcycle</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <h3 t-field="motorcycle.name"/>
+                </div>
+            </div>
+        </t>
+    </template>
+        
+</odoo>
+
